@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body {
+    margin: 0px ;
+    padding: 0px;
+    }
+     #Navbarsection{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(6, 6, 50);
+    padding: 25px;
+     }
+     .gradschool{
+     margin-top: 0px; 
+    margin-left: 5px;
+     font-size: xx-large;
+    }
+    .Grad{
+    color: gold;
+    font-weight: bold;
+    font-size: xx-large;
+    }
+    .school{
+    color: white;
+    font-weight: bold;
+    font-size: Xx-large;
+    }
+    .Homepagenavbar{
+    padding: 05px;
+    }
+    .homedetails{
+    color: white;
+    padding-right: 50px;
+    font-size: x-large;
+    font-weight: bold;
+    padding-top: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    }
+    .mainimageforschool{
+    background-image: url(./editedmainimage.png);
+    height:100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 500px;
+    }
+    .schoolmanagement{
+    text-align: center;
+    align-content: center;
+    padding-top: 200px;
+    }
+    .graduateschool{
+    color: orange;
+    font-weight: bold;
+    font-size: xx-large;
+    }
+    .yourclassroom{
+    color: gold;
+    font-size: 50px;
+    font-weight: bold;
+    }
+    .classroomspan{
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    }
+    .discovermorebutton{
+    height: 60px;
+    width: 200px;
+    background-color: gold;
+    color:#fff;
+    font-weight: bolder;
+    border: 0px;
+    margin-top: 20px;
+    }
+    .coursedetailsandclassess{
+    display: flex;
+    align-items: end;
+    margin-top: 17%;
+    margin-left: 320px;
+    width: 600px;
+    }
+    .detailsofthecourse{
+     background-color: rgb(6, 6, 50) ;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    margin: 2px;
+    text-align: center;
+    width: 300px;
+    }
+    .verticalline{
+     border-left: 2px solid grey;
+    height: 100px;
+    margin-left: 50%;
+    }
+    #aboutussection{
+    background-image: url(./choosing-bg.jpg);
+    height: 80vh;
+    width: 100%;
+    margin-top: -500px;
+    }
+        
+    .why{
+    text-align: center;
+    }
+    .whychoose{
+    border: 1px solid grey;
+    padding: 0px;
+    margin-top: 10px;
+    font-size: larger;
+    color: white;
+    height: 40px;
+    text-align: center;
+    }
+    .besteducation{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 75px;
+    margin-right: 50px;
+    color: white;
+    margin-top: 10PX;
+    text-align: center;
+    
+    }
+    .besteducationimageanddetails{
+    color: gold;
+    }
+    .gradschoolfreeeducation{
+    font-weight: bold;
+    font-size: larger;
+    }
+    .imageforbesteducation{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 200px;
+    margin-top: 40px;
+    }
+    .besteducationdiscripition{
+    text-align: left;
+    word-wrap: break-word;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    }
+    .bestimage{
+        height: auto;
+        width: auto;
+    }
+    .Register{
+    background-image: url("./coming-soon-bg.jpg");
+    height: 80vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto ;
+
+    }     
+    .onlinesection{
+     grid-column: 1/3;
+     margin-left: 150px;
+     margin-top: 100px;
+    }
+    .takeanycourse{
+    color: white;
+    font-size: xxx-large;
+    padding: 10px;
+    }
+    .onlinecourse{
+    color: gold
+    }
+    .inputvalue{
+    background-color: gray;
+    height: 300px;
+    margin-top: -16px;
+    opacity: 0.8;
+    }
+    .inputname{
+    height: 25px;
+    margin: 10px 5px;
+    color: black;
+    font-size: large;
+    text-align: left;
+    opacity: 1;
+    }
+    .hour{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-row: 2/4;
+    margin-left: 150px;
+    margin-top: -200px;
+    }
+    
+    .days{
+    margin: 15px;
+    background-color: rgb(121, 121, 121);
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+    height: 150px;
+    font-weight: bolder;
+    }
+    .time{
+    color: rgb(252, 251, 251);
+    font-weight: bolder;
+    font-size: xxx-large;
+    opacity: 1;
+    }
+    .minutes{
+    color: gold;
+    opacity: 1;
+    }
+    .registersection{
+    text-align: center;
+    margin-top: 100px;
+    margin-right: 40px;
+    }
+    .registeraccount{
+    background-color: grey;
+    opacity: 1;
+    }
+    .registerdiscripition{
+    color: white;
+    padding: 25px 30px;
+    }
+    .getitnow{
+    background-color: yellow;
+    opacity :1;
+    padding: 10px;
+    font-weight: bolder;
+    color: #fff;
+    border: 0px;
+    text-align: center;
+    opacity: none;
+    }
+    .chooseyoucourse{
+    background-image: url("choosing-bg.jpg");
+    height: 100vh;
+    width: 100%;
+    }
+    .courseimagesandetails{
+    display: flex;
+    padding-top: 80px;
+    margin-left: 75px;
+    }
+    .coursedetails{
+    background-color: #fff;
+    height:400px;
+    width: 250px;
+    margin-left: 50px;
+    border-radius: 8px;        
+    }
+    .imagecontainerforcoursedetails{
+
+    }
+    .imagecourse{
+    margin: 15px;
+    }
+    .authordetails{
+    display: flex ;
+    justify-content: space-between;
+    }
+    .videocontainer{
+    background-image: url("./video-bg.jpg");
+    height: 80vh;
+    width:100%;      
+    }
+    .presentationcontainer{
+    display: flex;
+    padding-top: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    }
+    .presentaiondetails{
+    padding: 10px;
+    }
+    .ourpresentations{
+    color: #fff;
+    }
+    .watchthevideo{
+     color: #fff;
+    }
+    .youarenotallowed{
+    color: #fff;
+    }
+    .supdiscripition{
+    color: #fff;
+    }
+    .extrenalbutton{
+    height: 50px;
+    background-color: gold;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    }
+    .presentationimage{
+        height: 450px;
+        width: 550px;
+    }
+    .containcontainer{
+    background-image: url("./contact-bg.jpg");
+    height: 85vh;
+    width: 100%;
+    }
+    .contact{
+    display: flex;
+    margin-top: 50px;
+    margin-left:200px;
+    }
+    .contactinputs{
+    background-color: gray;
+    opacity: 0.8;
+    margin: 20px;
+    padding: 25px;
+    }
+    .nameinput{
+    height: 35px;
+    }
+    .emailinput{
+    height: 35px;
+    opacity: 1;
+    }
+    .messageinput{
+    height: 200px;
+    width:300px;
+    margin-top: 20px;   
+    }
+    .sendmessagebutton{
+    height: 50px;
+    width: 200px;
+    background-color: gold;
+    border:0px;
+    color: #fff;
+    opacity: 1;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    }
+    .iframemap{
+    margin-left: 50px;
+    }
+    .footer{
+    background-color: rgb(6, 6, 50);
+    height: 100px;
+    margin-top: -20px;
+    }
+    .footerdis{
+    color: gold;
+    font-weight: bold;
+     text-align: center;
+    }
+    .cratedby{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    @media only screen and (min-width:0px) and (max-width:480px) {
+     body {
+    margin: 0px ;
+    padding: 0px;
+    } 
+     #Navbarsection{
+    display: block;
+    justify-content: space-between;
+    background-color: rgb(6, 6, 50);
+    padding: 20px;
+     }
+    .gradschool{
+     font-size: xx-large;
+     text-align: center;
+    }
+    .Grad{
+    color: gold;
+    font-weight: bold;
+    font-size: xx-large;
+    }
+    .school{
+    color: white;
+    font-weight: bold;
+    font-size: Xx-large;
+    }
+    .Homepagenavbar{
+
+    }
+    .homedetails{
+    color: white;
+    font-size: xx-small;
+    font-weight: bold;
+    padding-top: 0px;
+    cursor: pointer;
+    text-decoration: none;
+    padding-right: 0px;
+    margin: 2px;
+    }
+    .mainimageforschool{
+    background-image: url(./editedmainimage.png);
+    height:25vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .schoolmanagement{
+    text-align: center;
+    align-content: center;
+    padding-top: 0px;
+    }
+    .graduateschool{
+    color: orange;
+    font-weight: bold;
+    font-size: medium;
+    }
+    .yourclassroom{
+    color: gold;
+    font-size: large;
+    font-weight: bold;
+    }
+    .classroomspan{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    }
+    .discovermorebutton{
+    height: 30px;
+    width: 150px;
+    background-color: gold;
+    color:#fff;
+    font-weight: bolder;
+    border: 0px;
+    margin-top: 0px;
+    }
+    .coursedetailsandclassess{
+    display: none;
+    align-items: end;
+    margin-top: 0%;
+    margin-left: 0px;
+    width: 600px;
+    }
+    .detailsofthecourse{
+        background-color: rgb(6, 6, 50) ;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    margin: 2px;
+    text-align: center;
+    width: 300px;
+    }
+    .verticalline{
+    border-left: 2px solid grey;
+    height: 50px;
+    margin-left: 50%;
+    }
+   #aboutussection{
+    background-image: url(./choosing-bg.jpg);
+    height: 90vh;
+    width: 100%;
+    /* margin-bottom: -27%; */
+    }     
+    .why{
+    text-align: center;
+    }
+    .whychoose{
+    border: 1px solid grey;
+    padding: 0px;
+    margin-top: 10px;
+    font-size: larger;
+    color: white;
+    height: 40px;
+    text-align: center;
+    }
+    .besteducation{
+    display: block;
+    grid-template-columns: auto auto auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: white;
+    margin-top: 10PX;
+    text-align: center;
+    
+    }
+    .besteducationimageanddetails{
+    color: gold;
+    padding: 5px;
+    }
+    .gradschoolfreeeducation{
+    font-weight: bold;
+    font-size: larger;
+    padding: 5px;
+    }
+    .imageforbesteducation{
+    display: block;
+    grid-template-columns: auto auto;
+    margin-left: 0px;
+    margin-top: px;
+    }
+    .besteducationdiscripition{
+    text-align: left;
+    word-wrap: break-word;
+    color: white;
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+    .bestimage{
+        height: 50%;
+        width: 50%;
+        margin-left: 25%;
+    }
+    .Register{
+    background-image: url("./coming-soon-bg.jpg");
+    height: 80vh;
+    width:100%;
+    display: block;
+    background-size: cover;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto auto ;
+
+    }     
+    .onlinesection{
+     grid-column: 1/3;
+     margin-left: 0px;
+     margin-top: -20px;
+     padding-top: 5%;
+    }   
+    .takeanycourse{
+    color: white;
+    font-size: x-large;
+    padding: 10px;
+    }
+    .onlinecourse{
+    color: gold
+    }
+    .inputvalue{
+    background-color: gray;
+    height: 300px;
+    margin-top: -16px;
+    opacity: 0.8;
+    }
+    .inputname{
+    height: 25px;
+    margin: 10px 5px;
+    color: black;
+    font-size: large;
+    text-align: left;
+    opacity: 1;
+    }
+    .hour{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-row: 2/4;
+    margin-left: 0px;
+    margin-top: 0px;
+    padding-left: 3%;
+    }
+    
+    .days{
+    margin: 0px;
+    background-color: rgb(121, 121, 121);
+    padding: 0px;
+    text-align: center;
+    width: 80px;
+    height: 100px; 
+    font-weight: bolder;
+    
+    }
+    .time{
+    color: rgb(252, 251, 251);
+    font-weight: bolder;
+    font-size: xx-large;
+    opacity: 1;
+    }
+    .minutes{
+    color: gold;
+    opacity: 1;
+
+    }
+    .registersection{
+    text-align: center;
+    margin-top: 10%;
+    margin-right: 0px;
+    margin: 3%;
+    }
+    .registeraccount{
+    background-color: grey;
+    opacity: 1;
+    }
+    .registerdiscripition{
+    color: white;
+    padding: 25px 30px;
+    }
+    .getitnow{
+    background-color: yellow;
+    opacity :1;
+    padding: 10px;
+    font-weight: bolder;
+    color: #fff;
+    border: 0px;
+    text-align: center;
+    opacity: none;
+    }
+    .chooseyoucourse{
+    background-image: url("choosing-bg.jpg");
+    height: 100%;
+    width: 100%;
+    }
+    .courseimagesandetails{
+    display: block;
+    padding-top: 50%;
+    margin-left: 5%;
+    }
+    .coursedetails{
+    background-color: #fff;
+    height:400px;
+    width: 250px;
+    margin-left: 70px;
+    border-radius: 8px;        
+    }
+    .imagecontainerforcoursedetails{
+
+    }
+    .imagecourse{
+    margin: 15px;
+    }
+    .authordetails{
+    display: flex ;
+    justify-content: space-between;
+    }
+    .videocontainer{
+    background-image: url("./video-bg.jpg");
+    height: 80vh;
+    width:100%;      
+    }
+    .presentationcontainer{
+    display: block;
+    padding-top: 100px;
+    margin-right: 0px;
+    margin-left: 0px;
+    }
+    .presentaiondetails{
+    padding: 10px;
+    }
+    .ourpresentations{
+    color: #fff;
+    }
+    .watchthevideo{
+     color: #fff;
+    }
+    .youarenotallowed{
+    color: #fff;
+    }
+    .supdiscripition{
+    color: #fff;
+    }
+    .extrenalbutton{
+    height: 50px;
+    background-color: gold;
+    color: white;
+    font-weight: bold;
+    border: 0px;
+    }
+    
+    .containcontainer{
+    background-image: url("./contact-bg.jpg");
+    height: 85vh;
+    width: 100%;
+    }
+    .contact{
+    display: flex;
+    margin-top: 50px;
+    margin-left:200px;
+    }
+    .contactinputs{
+    background-color: gray;
+    opacity: 0.8;
+    margin: 20px;
+    padding: 25px;
+    }
+    .nameinput{
+    height: 35px;
+    }
+    .emailinput{
+    height: 35px;
+    opacity: 1;
+    }
+    .messageinput{
+    height: 200px;
+    width:300px;
+    margin-top: 20px;   
+    }
+    .sendmessagebutton{
+    height: 50px;
+    width: 200px;
+    background-color: gold;
+    border:0px;
+    color: #fff;
+    opacity: 1;
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    }
+    .iframemap{
+    margin-left: 50px;
+    }
+    .footer{
+    background-color: rgb(6, 6, 50);
+    height: 100px;
+    margin-top: -20px;
+    }
+    .footerdis{
+    color: gold;
+    font-weight: bold;
+     text-align: center;
+    }
+    .cratedby{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    } */
+    }
+    </style>
+</head>
+<body>
+    <body>
+        <div id="Navbarsection">
+            <div class="gradschool">
+                <span class="Grad"> GRAD </span> <span class="school"> SCHOOL </span>
+            </div>
+             
+            <div class="Homepagenavbar">
+                <a class="homedetails"> Home </a>
+                <a class="homedetails"> ABOUT US </a>
+                <a class="homedetails"> COURSES </a>
+                <a class="homedetails"> CONTACT </a>
+                <a class="homedetails"> EXTERNAL </a>
+            </div>             
+        </div> 
+                <div class="mainimageforschool" id="homepage">
+                 <div class="schoolmanagement">
+                    <p class="graduateschool"> GRADUATE  SCHOOL OF MANAGEMENT </p>
+                    <h1 class="yourclassroom"> YOUR <span class="classroomspan">CLASSROOM</span> </h1>
+                    <button class="discovermorebutton"> DISCOVER MORE </button>
+                 </div>
+                 <div class="coursedetailsandclassess">
+                    <div>
+                        <h1 class="detailsofthecourse" id="colorforcourse"> <i class="fa-solid fa-pen"></i>  ALL COURSES </h1>
+                    </div>
+                    <div>
+                        <h1  class="detailsofthecourse">  <i class="fa-solid fa-graduation-cap"></i> VIRTUAL CLASS </h1>
+                    </div>
+                    <div>
+                        <h1  class="detailsofthecourse"> <i class="fa-solid fa-book"></i>   REAL MEETING  </h1>
+                    </div>
+                 </div>
+                </div>
+                <div id="aboutussection" id="aboutuspage">
+                          <div class="verticalline"> </div>  
+                           <div class="why"> <span class="whychoose"> WHY CHOOSE GRAD SCHOOL ?</span> </div>
+                            <div  class="besteducation">
+                                 <div class="besteducationimageanddetails">
+                                    <p> BEST EDUCATION</p>
+                                    <span> <i class="fa-regular fa-square"></i> </span>
+                                 </div>
+                                 <div>
+                                    <p> TOP MANAGEMENT </p>
+                                    <span> <i class="fa-solid fa-square"></i> </span>
+                                 </div>
+                                 <div>
+                                    <p> QUALITY MEETING </p>
+                                    <span> <i class="fa-solid fa-square"></i> </span>
+                                 </div>
+                            </div>
+                         <div class="imageforbesteducation">
+                            <div>
+                                <img src="./choose-us-image-01.png" class="bestimage">
+                            </div>
+                            <div class="besteducationdiscripition">
+                                <h1 class="besteducationimageanddetails"> Best Education </h1>
+                                <p class="gradschoolfreeeducation"> Grad School is free educational HTML template with Bootstrap 4.5.2 CSS layout. Feel free to use it for educational or commercial purposes. You may want to make a little donation to TemplateMo. Please tell your friends about us. Thank you.</p>
+                            </div>
+                         </div>
+                </div>
+                <div class="Register">
+                        <div class="onlinesection">
+                            <h1 class="takeanycourse"> Take <span class="onlinecourse">any online course </span> and win $326 for your next class</h1>
+                        </div>
+                        <div class="hour">
+                            <div class="days">
+                                <h1 class="time"> 72 </h1>
+                                <p class="minutes"> DAYS </p>
+                            </div>
+                            <div class="days">
+                                <h1 class="time"> 0 </h1>
+                                <p class="minutes"> HOURS </p>
+                            </div>
+                            <div class="days">
+                                <h1 class="time"> 48 </h1>
+                                <p class="minutes"> MINUTES </p>
+                            </div>
+                            <div class="days">
+                                <h1 class="time"> 33 </h1>
+                                <p class="minutes"> SECONDS </p>
+                            </div>
+                        </div>
+                       
+                       <div class="registersection">
+                        <div class="registeraccount">
+                            <p class="registerdiscripition"> Register your free account and get immediate access to online courses </p>
+                        </div>
+                        <div class="inputvalue">
+                          <p>  <input type="text" placeholder="Your Name" class="inputname"> </p> 
+                          <p>  <input type="text" placeholder="Your Email" class="inputname">  </p> 
+                          <p>   <input type="text" placeholder="Your Phone Number" class="inputname"> </p> 
+                           <button class="getitnow"> GET IT NOW </button>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="chooseyoucourse" id="coursepage">
+                            <div class="verticalline"> </div>
+                            <div class="why">  <span class="whychoose">CHOOSE YOUR COURSE</span>  </div>
+                            <div class="courseimagesandetails">
+                            <div class="coursedetails">
+                                 <div class="imagecontainerforcoursedetails">
+                                    <img src="./courses-02.jpg" height="150px" width="250px">
+                                    <div class="imagecourse">
+                                       <p> DIGITAL MARKETING </p> 
+                                       <P> Quisque cursus augue ut velit dictum, quis voultpat enim blandit. maecenas a ectus ac ipsum porta </P>
+                                       <div  class="authordetails">
+                                        <img src ="./author-02.png">
+                                        <p> free &gt;&gt;</p>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="coursedetails">
+                                <div class="imagecontainerforcoursedetails">
+                                   <img src="./courses-03.jpg" height="150px" width="250px">
+                                   <div class="imagecourse">
+                                      <p> MEDIA TECHNOLOGY </p> 
+                                      <P> Pellentensque ultricies diam magna, auctor cursus lectus pritium nec. maecanes finibus loboritis enim. </P>
+                                      <div  class="authordetails">
+                                       <img src ="./author-03.png">
+                                       <p> free &gt;&gt;</p>
+                                      </div>
+                                   </div>
+                               </div>
+                           </div>
+                           <div class="coursedetails">
+                            <div class="imagecontainerforcoursedetails">
+                               <img src="./courses-04.jpg" height="150px" width="250px">
+                               <div class="imagecourse">
+                                  <p> COMMUNICATIONS </p> 
+                                  <P> Download free images and videos for your website by visting unsplash, pixabuy and pixels. </P>
+                                  <div  class="authordetails">
+                                   <img src ="./author-04.png">
+                                   <p> free &gt;&gt;</p>
+                                  </div>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="coursedetails">
+                            <div class="imagecontainerforcoursedetails">
+                               <img src="./courses-05.jpg" height="150px" width="250px">
+                               <div class="imagecourse">
+                                  <p> BUSSINESS ETHICS  </p> 
+                                  <P> Pellentensque ultricies diam magna, auctor cursus lectus pritium nec. maecanes finibus loboritis enim.  </P>
+                                  <div  class="authordetails">
+                                   <img src ="./author-05.png">
+                                   <p> free &gt;&gt;</p>
+                                  </div>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="coursedetails">
+                        <div class="imagecontainerforcoursedetails">
+                           <img src="./courses-01.jpg" height="150px" width="250px">
+                           <div class="imagecourse">
+                              <p> PHOTOGRAPHY </p> 
+                              <P> Quisque cursus augue ut velit dictum, quis voultpat enim blandit. maecenas a ectus ac ipsum porta </P>
+                              <div  class="authordetails">
+                               <img src ="./author-01.png">
+                               <p> free &gt;&gt;</p>
+                              </div>
+                           </div>
+                       </div>
+                   </div>
+              </div>
+            </div>
+            <div class="videocontainer">
+             <div class="presentationcontainer">
+                <div class="presentaiondetails">
+                    <p class="ourpresentations"> OUR PRESENTATION IS FOR YOU </p>
+                    <h1 class="watchthevideo"> Watch the video to learn more <span class="onlinecourse"> about Grad School </span> </h1>
+                    <p class="youarenotallowed"> You are NOT allowed to redistribute this template ZIP file on any template collection website. However, you can use this template to convert into a specific theme for any kind of CMS platform such as WordPress. You may contact TemplateMo for details.</p>
+                    <p class="supdiscripition"> Suspendisse tincidunt, magna ut finibus rutrum, libero dolor euismod odio, nec interdum quam felis non ante.</p>
+                    <button class="extrenalbutton"> EXTERNAL URL </button>
+                </div>
+                <div>
+                    <img src="./main-thumb.png" height="450px" width="550px" class="presentationimage">
+                </div>
+             </div>        
+           </div>
+           <div class="containcontainer" id="contactpage">
+                  <div class="verticalline"></div>
+                  <div class="why">  <span class="whychoose">LET'S KEEP IN TOUCH </span>  </div>
+                  <div class="contact">
+                    <div class="contactinputs">
+                       <input type="text" placeholder="NAME" class="nameinput">
+                       <input type="email" placeholder="Your Email" class="emailinput">
+                       <div>
+                       <input type="text" placeholder="Message" class="messageinput">
+                       </div>
+                       <button class="sendmessagebutton"> SEND Message NOW </button>
+                    </div>
+                    <div class="iframemap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58756.987128414774!2d-43.385296!3d-23.012325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bdb695cd967b7%3A0x171cdd035a6a9d84!2sAv.%20L%C3%BAcio%20Costa%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%20Brazil!5e0!3m2!1sen!2sus!4v1714295947968!5m2!1sen!2sus" width="600" height="450" class="iframemapsfor" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy
+                        ="no-referrer-when-downgrade"></iframe>
+                     </div>
+                  </div>
+          </div>
+           <div class="footer" id="footerpage">
+            <hr>
+            <p class="footerdis"> <i class="fa-regular fa-copyright"></i>  COPYRIGHT 2020 BY GRAD SCHOOL | DESIGN: TEMPLATEMO </p>
+            <p class="cratedby"> Created by SAMSON </p>
+        </div>
+</body>
+</html>
